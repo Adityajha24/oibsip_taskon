@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%; height: 100%;
+    background-image : repeating-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url('rent1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+    transition: 4s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+  @keyframes animate {
+    0%{
+        background-image: url('rent2.jpg');
+    }
+    200%{
+        background-image: url('rent3.jpg');
+    }
+    40%{
+        background-image: url('rent4.jpg');
+    }
+    60%{
+        background-image: url('rent5.jpg');
+    }
+    80%{
+        background-image: url('rent6.jpg');
+    }
+   /*  100%{
+        background-image: url('rent7.jpg');
+    }*/
+  }
+nav{
+    width: 100%; height: 10vh;
+    background: rgb(0,0,0,0.2);
+    color: white; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; font-style:initial;
+}
+nav .logo{ 
+    width: 25%; text-align: center;
+    
+}
+nav .menu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+}
+nav .menu a {
+   width: 25%;
+   text-decoration: none; color: white;
+   font-weight: bold;
+}
+
+nav .menu a:first-child{ 
+        color: #00b894;
+}
+main{
+    width: 100%;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+section{
+
+}
+section h3{
+    font-size: 35px; font-weight: 200; letter-spacing: 3px;
+    background: rgb(0,0,0,0.4);
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    background: rgb(0,0,0,0.4);
+    font-size: 55px;
+    font-weight: 500;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black; 
+}
+
+section a{ 
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+  /* background: #00b894;*/
+  background: #fff;
+  color: #000;
+  
+}
+
+section .btntwo{ 
+    background: #00b894;
+    color: white;
+
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover{
+    background: #fff;
+    color: #000;
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+ /*@keyframes changetext{
+    0%{content: "Delhi";}
+    20%{content: "Agra";}
+    40%{content: "Gwalior";}
+    60%{content: "shivpuri";}
+    80%{content: "Indore";}
+    100%{content: "Mumbai";}
+}
+*/
+nav .btnthree{
+    color: white;
+    background: none;
+}
+
+.btnthree:hover{
+    color: #00b894;
+}
